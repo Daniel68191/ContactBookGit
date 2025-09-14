@@ -61,7 +61,7 @@ public class ContactBook {
     }
 
     private int searchIndex(String name) {
-        int i = 0;
+        int i =0;
         int result = -1;
         boolean found = false;
         while (i<counter && !found)

@@ -55,6 +55,9 @@ public class Main {
                 case LIST_CONTACTS:
                     listAllContacts(cBook);
                     break;
+                case SEARCH_CONTACT:
+                    searchContact(in, cBook);
+                    break;
                 default:
                     System.out.println(COMMAND_ERROR);
             }
@@ -148,5 +151,9 @@ public class Main {
             }
         }
         else System.out.println(BOOK_EMPTY);
+    }
+
+    private static void searchContact(Scanner in, ContactBook cBook){
+
     }
 }

@@ -73,6 +73,21 @@ public class ContactBook {
         return result;
     }
 
+    public boolean checkEqualPhones(){
+        boolean found = false;
+        int i = 0;
+        while (i < counter && !found) {
+            int j = i+1;
+            while (j < counter && !found) {
+                if (contacts[i].getPhone() == contacts[j].getPhone())
+                    found = true;
+                j++;
+            }
+            i++;
+        }
+        return found;
+    }
+
     private int searchIndex(String name) {
         int i = 0;
         int result = -1;

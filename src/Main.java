@@ -160,6 +160,16 @@ public class Main {
     }
 
     private static void searchContact(Scanner in, ContactBook cBook){
+        int phone;
+        phone = in.nextInt(); in.nextLine();
+        String name = cBook.getName(phone);
+        if(!name.equals("NULL")){
+            System.out.println(name);
+        }
+        else System.out.println(NUMBER_NOT_EXIST);
+    }
+
+    private static void existPhone(ContactBook cBook){
 
     }
 
